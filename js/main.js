@@ -2,6 +2,7 @@
 // SI-assisted code (Claude, Antigravity), reviewed by La Shara Cordero. See AI_DISCLOSURE.md.
 
 import { loadGhostData, loadMarsData, showErrorBanner } from './data.js';
+import { resolveLang, loadDict, localizeWorld, applyStatic, setLang, t } from './i18n.js';
 import { createMoonGlobe } from './globe.js';
 import { initSiteMarkers } from './markers.js';
 import { initPanels } from './card.js';
@@ -120,6 +121,11 @@ function makeEmptyWorldMem() {
 }
 
 async function startApp() {
+  // Optional translation: ?lang= wins, then the saved choice, then the browser language.
+  // Start the dictionary and the data together, so translating never adds a round trip.
+  const lang = resolveLang();
+  const dictReady = lang === 'en' ? Promise.resolve(null) : loadDict(lang);
+
   let moonData;
   try {
     moonData = await loadGhostData();
@@ -127,13 +133,26 @@ async function startApp() {
     return;
   }
 
+  if (lang !== 'en') {
+    const dict = await dictReady;
+    // Only claim the language when the dictionary actually loaded: otherwise the page shows
+    // English and must announce English to screen readers.
+    if (dict) {
+      moonData = localizeWorld(moonData);
+      applyStatic();
+      document.documentElement.lang = lang;
+    }
+  }
+
   // Mars is a second world, not a dependency of the first: it loads in the background,
   // so a slow or missing Mars file never delays the Moon console.
   const worldDataMap = { moon: moonData, mars: null };
   const marsReady = loadMarsData()
     .then((data) => {
-      worldDataMap.mars = data;
-      return data;
+      // localizeWorld() is a no-op when no dictionary is loaded, so English stays untouched.
+      const localized = localizeWorld(data);
+      worldDataMap.mars = localized;
+      return localized;
     })
     .catch(() => {
       showErrorBanner('MARS CONSOLE UNAVAILABLE: Mars data did not load. The Moon console still works.');
@@ -206,6 +225,10 @@ async function startApp() {
   const gmtValEl = document.getElementById('gmt-val');
   const moonClockLabelEl = document.getElementById('moon-clock-label');
   const moonClockValEl = document.getElementById('moon-clock-val');
+  const langSelectEl = document.getElementById('lang-select');
+  langSelectEl.value = lang;
+  langSelectEl.addEventListener('change', () => setLang(langSelectEl.value));
+
   const worldMoonBtnEl = document.getElementById('world-moon-btn');
   const worldMarsBtnEl = document.getElementById('world-mars-btn');
 
@@ -827,6 +850,20 @@ async function startApp() {
       state.typedAnswer = '';
     }
     updateAll();
+
+    // On a phone the answer box sits above the question buttons; bring it into view so the
+    // reply is readable and the remaining questions stay reachable right below it.
+    if (nextQ !== null) {
+      const answerBox = isPhoneWidth()
+        ? document.getElementById('phone-file-answer-box')
+        : document.getElementById('file-answer-box');
+      if (answerBox && !answerBox.hidden) {
+        answerBox.scrollIntoView({
+          block: 'nearest',
+          behavior: prefersReducedMotion() ? 'auto' : 'smooth'
+        });
+      }
+    }
   }
 
   function clearQuestion() {

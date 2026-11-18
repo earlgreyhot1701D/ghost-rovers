@@ -1,0 +1,163 @@
+{
+  "_disclosure": "French translation written by Claude (SI) for the author's review. Names, codes, clocks and console codes stay English on purpose.",
+  "lang": "fr",
+  "ui": {
+    "idlePrompt": "Choisis une machine. Appuie sur CALL GHOST. Regarde qui répond.",
+    "pickFirst": "CHOISIS D'ABORD UNE MACHINE, PUIS APPELLE.",
+    "signalCheck": "VÉRIFICATION DU SIGNAL : APPUIE SUR CALL GHOST",
+    "radioMoon": "Appel vers la Lune… 1,3 seconde par sens.",
+    "radioMars": "Appel vers Mars… de 3 à 22 minutes par sens.",
+    "askLabel": "QUESTION :",
+    "answerLabel": "RÉPONSE :",
+    "readToMe": "LIS-MOI",
+    "stop": "STOP",
+    "close": "FERMER",
+    "openFile": "OUVRIR LA FICHE",
+    "monitorReady": "CONSOLE PRÊTE.",
+    "monitorHint": "Appuie sur un bouton allumé ou sur les touches 1 à 6 pour choisir une machine.",
+    "aboutTitle": "À PROPOS DE GHOST ROVERS",
+    "aboutTeachersLabel": "POUR LES ENSEIGNANTS :",
+    "aboutTeachersText": "Gratuit, sans compte et sans collecte de données. À combiner avec le cahier d'étude : quiz, cartes et podcast.",
+    "aboutFacts": "Chaque fait est vérifié dans les archives de la NASA (NSSDCA). Les photos et les cartes de la Lune et de Mars appartiennent à la NASA.",
+    "aboutAuthor": "Créé par La Shara Cordero, équipe Clew Labs, pour le NASA Space Apps Challenge 2026.",
+    "aboutTagline": "Avec l'aide de l'IA. Validé par un humain.",
+    "missionTitleMoon": "VÉRIFICATION TERMINÉE. Tu as vérifié chaque machine laissée sur la Lune par la NASA.",
+    "missionTitleMars": "VÉRIFICATION DE MARS TERMINÉE. Aucune ne répond. Pas encore.",
+    "keepExploring": "CONTINUE :",
+    "missionNote": "Réalisé avec des outils d'étude IA à partir des sources de la NASA.",
+    "saveBadge": "ENREGISTRER LE BADGE",
+    "monitorTapMoon": "Ou touche un carré sur la Lune. Puis appuie sur CALL GHOST (ou C). M pour Mars. ? pour l'aide.",
+    "monitorTapMars": "Ou touche un carré sur Mars. Puis appuie sur CALL GHOST (ou C). M pour la Lune. ? pour l'aide.",
+    "rotateTitle": "REMPORTE LE TÉLÉPHONE",
+    "rotateText": "La console est haute. Remets le téléphone à la verticale pour continuer.",
+    "timelineTodayMoon": "AUJOURD'HUI · Les six sont toujours là. Une répond.",
+    "timelineTodayMars": "AUJOURD'HUI · Ces six sont muets. Deux rovers plus récents répondent.",
+    "logStatusNew": "PAS ENCORE VÉRIFIÉ",
+    "logStatusAnswers": "VÉRIFIÉ · RÉPOND",
+    "logStatusQuiet": "VÉRIFIÉ · SILENCIEUX DEPUIS",
+    "closePhotoAria": "Fermer la visionneuse de photos",
+    "closeAboutAria": "Fermer la fenêtre À propos"
+  },
+  "ghosts": {
+    "mirror": {
+      "job": "L'équipage d'Apollo 11 m'a posé comme cible pour les lasers tirés depuis la Terre, pour mesurer la distance exacte à la Lune.",
+      "story": "Je suis un plateau de 100 petits miroirs. Les scientifiques sur Terre me visent encore au laser et je renvoie la lumière.",
+      "qs": [
+        ["Comment un miroir fonctionne-t-il encore ?", "Il n'a besoin d'aucune énergie. Il reste là et renvoie la lumière, comme un catadioptre de vélo."],
+        ["Qu'ont appris les scientifiques ?", "La Lune s'éloigne de la Terre d'environ 3,8 cm par an. À peu près la vitesse de croissance des ongles."],
+        ["En quoi est-il fait ?", "100 cubes de coin en verre sur un panneau métallique d'environ 46 cm. Chacun renvoie la lumière exactement d'où elle vient."]
+      ],
+      "reply": "SIGNAL REÇU. LA LUMIÈRE A FAIT L'ALLER-RETOUR EN 2,5 SECONDES."
+    },
+    "eagle": {
+      "job": "Le module lunaire d'Apollo 11. Il a posé les deux premiers humains sur la Lune en juillet 1969.",
+      "story": "La moitié de moi est restée ici. Quand les astronautes ont décollé, ma partie haute est repartie vers leur vaisseau. Mes jambes sont toujours debout dans la poussière.",
+      "qs": [
+        ["Pourquoi l'avoir laissé ?", "La partie basse servait de plateforme de décollage. La laisser sur place allégeait le retour."],
+        ["Quelqu'un peut-il le voir ?", "Oui ! Une sonde de la NASA en orbite a photographié le site d'atterrissage vu d'en haut."],
+        ["En quoi est-il fait ?", "Quatre jambes à patins ronds, 4,2 m de large. Le moteur de descente est encore à l'intérieur, pointé vers le sol."]
+      ],
+      "reply": "PAS DE SIGNAL. SILENCIEUX DEPUIS 1969."
+    },
+    "surveyor": {
+      "job": "Un robot qui a prouvé qu'on pouvait se poser en douceur sur la Lune et qui a étudié le sol avant l'arrivée des astronautes.",
+      "story": "Je me suis posé ici tout seul. Deux ans et demi plus tard, deux astronautes sont venus me voir et ont emporté ma caméra sur Terre.",
+      "qs": [
+        ["Pourquoi les astronautes sont-ils venus ?", "Pour voir ce que les années lunaires font à une machine. Ils ont rapporté des pièces pour les étudier."],
+        ["Est-il toujours là ?", "Oui, mais sans la caméra ni quelques pièces emportées."],
+        ["En quoi est-il fait ?", "Trois jambes, un panneau solaire, une caméra de télévision et une pelle de 12 cm au bout d'un long bras."]
+      ],
+      "reply": "PAS DE SIGNAL. SILENCIEUX DEPUIS 1967."
+    },
+    "alsep": {
+      "job": "Un ensemble d'instruments posé par Apollo 12 pour mesurer les séismes lunaires, le magnétisme et le vent solaire.",
+      "story": "J'ai écouté la Lune. J'ai senti les séismes et les impacts de météorites, et pendant des années j'ai tout transmis à la Terre.",
+      "qs": [
+        ["C'est quoi un séisme lunaire ?", "La Lune tremble aussi ! Des instruments comme moi ont senti des séismes et des impacts de météorites."],
+        ["Pourquoi l'a-t-on éteint ?", "Le 30 septembre 1977, la NASA a éteint toutes les stations Apollo. L'argent était nécessaire ailleurs et l'énergie s'épuisait."],
+        ["En quoi est-il fait ?", "Une boîte d'instruments reliée à une batterie thermique au plutonium, environ 70 watts."]
+      ],
+      "reply": "PAS DE SIGNAL. ÉTEINT EN 1977."
+    },
+    "lrv15": {
+      "job": "La première voiture que des astronautes ont conduite sur la Lune. Apollo 15 l'a apportée pour s'éloigner bien plus du module.",
+      "story": "J'ai été la première voiture conduite sur la Lune. Deux astronautes m'ont emmenée sur des collines et dans des cratères, puis m'ont laissée pour toujours.",
+      "qs": [
+        ["Est-ce que je pourrais la conduire ?", "Les batteries sont vides, donc elle ne bouge plus. Les astronautes ont parcouru environ 28 km avec moi."],
+        ["Pourquoi une voiture ?", "Pour aller plus loin qu'à pied et transporter des roches et des outils."],
+        ["En quoi est-elle faite ?", "Elle est électrique ! Chacune de ses 4 roues avait son moteur, les pneus étaient en fil d'acier tressé et les batteries ne se rechargeaient pas."]
+      ],
+      "reply": "PAS DE SIGNAL. GARÉE DEPUIS 1971."
+    },
+    "lrv17": {
+      "job": "Elle a emmené le dernier équipage Apollo dans la vallée Taurus-Littrow chercher des roches et des échantillons.",
+      "story": "On m'a conduite lors du tout dernier voyage Apollo. Depuis, je reste garée dans cette vallée.",
+      "qs": [
+        ["Combien de kilomètres ?", "Environ 36 km, plus que tout autre rover Apollo."],
+        ["Qui l'a conduite en dernier ?", "L'équipage d'Apollo 17, en décembre 1972. Depuis, aucun humain n'a conduit sur la Lune."],
+        ["En quoi est-elle faite ?", "Elle est électrique ! Chacune de ses 4 roues avait son moteur, les pneus étaient en fil d'acier et les batteries ne se rechargent pas."]
+      ],
+      "reply": "PAS DE SIGNAL. GARÉE DEPUIS 1972."
+    },
+    "viking1": {
+      "job": "Le premier engin de la NASA à se poser sans problème sur Mars. Il a étudié le sol, l'air et la météo.",
+      "story": "J'ai envoyé ma première photo de Mars 25 secondes après l'atterrissage. Ensuite j'ai travaillé plus de six ans.",
+      "qs": [
+        ["D'où venait l'énergie ?", "Deux batteries thermiques nucléaires au plutonium. Chacune donnait environ 30 watts, assez pour le jour et la nuit."],
+        ["Pourquoi s'est-il tu ?", "La NASA a perdu le contact le 13 novembre 1982, après plus de six ans sur Mars."],
+        ["En quoi est-il fait ?", "Un corps hexagonal en aluminium sur trois jambes, un bras robotisé avec une pelle et deux caméras qui regardaient autour."]
+      ],
+      "reply": "PAS DE SIGNAL. SILENCIEUX DEPUIS 1982."
+    },
+    "viking2": {
+      "job": "Le jumeau de Viking 1, envoyé très au nord pour étudier une autre région de Mars.",
+      "story": "Je me suis posé sur une vaste plaine caillouteuse, loin de mon jumeau. J'ai travaillé 1 281 jours martiens avant que les batteries ne lâchent.",
+      "qs": [
+        ["C'est quoi un jour martien ?", "On l'appelle un sol. Il dure environ 40 minutes de plus qu'un jour sur Terre."],
+        ["Pourquoi s'est-il arrêté ?", "La NASA m'a éteint le 11 avril 1980, quand les batteries ont lâché."],
+        ["En quoi est-il fait ?", "Comme mon jumeau : un corps en aluminium sur trois jambes, un bras avec une pelle, deux caméras et deux batteries nucléaires."]
+      ],
+      "reply": "PAS DE SIGNAL. BATTERIES HORS SERVICE EN 1980."
+    },
+    "sojourner": {
+      "job": "Le premier rover de la NASA sur Mars. Il a testé la conduite d'un robot sur une autre planète et étudié les roches près de son module.",
+      "story": "Une fille de 12 ans m'a donné mon nom. Je suis arrivé sur Mars dans des airbags géants, j'ai descendu une rampe et j'ai exploré les roches.",
+      "qs": [
+        ["Qui lui a donné son nom ?", "Une fille de 12 ans a gagné un concours et m'a nommé d'après Sojourner Truth, une héroïne qui a lutté contre l'esclavage et pour les droits des femmes."],
+        ["Comment a-t-il atterri ?", "Mon module a frappé le sol dans des airbags et a rebondi d'environ 12 mètres, plus haut qu'une maison de trois étages."],
+        ["En quoi est-il fait ?", "Six roues, un dessus plat couvert de panneaux solaires et des caméras. Je pesais environ 10,5 kg."]
+      ],
+      "reply": "PAS DE SIGNAL. SILENCIEUX DEPUIS 1997."
+    },
+    "spirit": {
+      "job": "Un géologue robot envoyé dans un cratère qui a peut-être abrité un lac, pour chercher des traces d'eau.",
+      "story": "Un enfant de CE2 m'a donné mon nom. J'étais prévu pour 90 jours, mais j'ai travaillé six ans. À la fin, je me suis enlisé dans le sable.",
+      "qs": [
+        ["Comment s'est-il enlisé ?", "En 2009, j'ai cassé une croûte fine et je suis tombé dans une poche de sable. En mai, je ne pouvais plus bouger."],
+        ["Combien de kilomètres ?", "Environ 7,7 km, même après l'arrêt d'une de mes six roues."],
+        ["En quoi est-il fait ?", "Six roues, des panneaux solaires en forme d'ailes, des batteries rechargeables et un mât avec des caméras comme des yeux."]
+      ],
+      "reply": "PAS DE SIGNAL. SILENCIEUX DEPUIS 2010."
+    },
+    "opportunity": {
+      "job": "Le jumeau de Spirit, envoyé de l'autre côté de Mars pour chercher dans les roches des traces d'eau.",
+      "story": "Ma mission était prévue pour 90 jours. J'ai travaillé plus de 14 ans et j'ai parcouru plus qu'un marathon.",
+      "qs": [
+        ["Pourquoi s'est-il tu ?", "En juin 2018, une énorme tempête de poussière a couvert Mars. Je fonctionnais à l'énergie solaire et la NASA ne m'a plus entendu."],
+        ["Combien de kilomètres ?", "Environ 45 km. Plus qu'un marathon et, quand je me suis arrêté, plus que tout autre rover sur un autre monde."],
+        ["Qu'a-t-il trouvé ?", "Je me suis posé dans un endroit plein d'hématite, un minéral qui se forme souvent dans l'eau. Un indice que Mars a été humide."]
+      ],
+      "reply": "PAS DE SIGNAL. SILENCIEUX DEPUIS 2018."
+    },
+    "insight": {
+      "job": "Un engin qui a écouté les séismes de Mars et mesuré la température de son intérieur pour comprendre la planète.",
+      "story": "J'ai écouté Mars trembler. La poussière a recouvert mes panneaux solaires et en décembre 2022 j'ai envoyé mon dernier message.",
+      "qs": [
+        ["C'est quoi un séisme martien ?", "Mars tremble aussi ! Mon sismomètre a senti le sol bouger, et cela aide les scientifiques à étudier l'intérieur de la planète."],
+        ["Qu'est-il arrivé à la taupe ?", "Ma sonde thermique, appelée la taupe, devait s'enfoncer de 5 mètres. Elle est restée bloquée à quelques centimètres."],
+        ["En quoi est-il fait ?", "Un sismomètre, une sonde thermique, des panneaux solaires, un bras robotisé et un petit miroir laser comme sur la Lune."]
+      ],
+      "reply": "PAS DE SIGNAL. DERNIER MESSAGE : DÉCEMBRE 2022."
+    }
+  }
+}

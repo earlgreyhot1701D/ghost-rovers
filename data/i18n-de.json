@@ -1,0 +1,163 @@
+{
+  "_disclosure": "German translation written by Claude (SI) for the author's review. Names, codes, clocks and console codes stay English on purpose.",
+  "lang": "de",
+  "ui": {
+    "idlePrompt": "Wähle eine Maschine. Drücke CALL GHOST. Schau, wer antwortet.",
+    "pickFirst": "WÄHLE ZUERST EINE MASCHINE, DANN ANRUFEN.",
+    "signalCheck": "SIGNALPRÜFUNG: DRÜCKE CALL GHOST",
+    "radioMoon": "Funk zum Mond… 1,3 Sekunden pro Richtung.",
+    "radioMars": "Funk zum Mars… 3 bis 22 Minuten pro Richtung.",
+    "askLabel": "FRAGE:",
+    "answerLabel": "ANTWORT:",
+    "readToMe": "VORLESEN",
+    "stop": "STOPP",
+    "close": "SCHLIESSEN",
+    "openFile": "DATEI ÖFFNEN",
+    "monitorReady": "KONSOLE BEREIT.",
+    "monitorHint": "Drücke eine leuchtende Taste oder die Tasten 1 bis 6, um eine Maschine zu wählen.",
+    "aboutTitle": "ÜBER GHOST ROVERS",
+    "aboutTeachersLabel": "FÜR LEHRKRÄFTE:",
+    "aboutTeachersText": "Kostenlos, ohne Anmeldung, ohne Datensammlung. Kombiniere es mit dem Lernheft: Quiz, Karteikarten und Podcast.",
+    "aboutFacts": "Jede Angabe ist gegen die NASA-Archive (NSSDCA) geprüft. Fotos und die Karten von Mond und Mars sind von der NASA.",
+    "aboutAuthor": "Gemacht von La Shara Cordero, Team Clew Labs, für die NASA Space Apps Challenge 2026.",
+    "aboutTagline": "Mit KI-Unterstützung. Von einem Menschen freigegeben.",
+    "missionTitleMoon": "PRÜFUNG FERTIG. Du hast jede Maschine geprüft, die die NASA auf dem Mond zurückgelassen hat.",
+    "missionTitleMars": "MARS-PRÜFUNG FERTIG. Keine antwortet. Noch nicht.",
+    "keepExploring": "WEITER ENTDECKEN:",
+    "missionNote": "Mit KI-Lernwerkzeugen aus NASA-Quellen erstellt.",
+    "saveBadge": "ABZEICHEN SPEICHERN",
+    "monitorTapMoon": "Oder tippe auf ein Feld auf dem Mond. Dann CALL GHOST (oder C). M für Mars. ? für die Hilfe.",
+    "monitorTapMars": "Oder tippe auf ein Feld auf dem Mars. Dann CALL GHOST (oder C). M für den Mond. ? für die Hilfe.",
+    "rotateTitle": "DREH DAS TELEFON HOCHKANT",
+    "rotateText": "Die Konsole ist hoch gebaut. Dreh das Telefon, um weiterzuspielen.",
+    "timelineTodayMoon": "HEUTE · Alle sechs sind noch da. Eine antwortet.",
+    "timelineTodayMars": "HEUTE · Diese sechs sind still. Zwei neuere Rover antworten.",
+    "logStatusNew": "NOCH NICHT GEPRÜFT",
+    "logStatusAnswers": "GEPRÜFT · ANTWORTET",
+    "logStatusQuiet": "GEPRÜFT · STILL SEIT",
+    "closePhotoAria": "Fotoansicht schließen",
+    "closeAboutAria": "Über-Fenster schließen"
+  },
+  "ghosts": {
+    "mirror": {
+      "job": "Die Apollo-11-Crew hat mich als Ziel für Laser von der Erde aufgestellt, um die genaue Entfernung zum Mond zu messen.",
+      "story": "Ich bin eine Platte mit 100 winzigen Spiegeln. Forschende auf der Erde zielen noch immer mit Laser auf mich, und ich werfe das Licht zurück.",
+      "qs": [
+        ["Wie funktioniert ein Spiegel nach so langer Zeit?", "Er braucht keine Energie. Er liegt einfach da und wirft Licht zurück, wie ein Fahrradreflektor."],
+        ["Was haben die Forschenden gelernt?", "Der Mond entfernt sich jedes Jahr um etwa 3,8 cm von der Erde. Ungefähr so schnell wachsen Fingernägel."],
+        ["Woraus besteht er?", "100 Glaseckenwürfel auf einer Metallplatte, etwa 46 cm breit. Jeder schickt das Licht genau dorthin zurück, wo es herkam."]
+      ],
+      "reply": "SIGNAL ZURÜCK. DAS LICHT WAR 2,5 SEKUNDEN HIN UND ZURÜCK UNTERWEGS."
+    },
+    "eagle": {
+      "job": "Die Landefähre von Apollo 11. Sie brachte im Juli 1969 die ersten zwei Menschen auf die Mondoberfläche.",
+      "story": "Die Hälfte von mir blieb hier. Als die Astronauten starteten, flog mein Oberteil zu ihrem Raumschiff. Meine Beine stehen noch immer im Staub.",
+      "qs": [
+        ["Warum wurde sie zurückgelassen?", "Der Unterteil war die Startplattform. Ohne ihn war der Rückweg leichter."],
+        ["Kann man sie heute sehen?", "Ja! Eine NASA-Sonde im Mondorbit hat die Landestelle von oben fotografiert."],
+        ["Woraus besteht sie?", "Vier Beine mit runden Tellerfüßen, 4,2 m breit. Innen steckt noch das Landetriebwerk, zum Boden gerichtet."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 1969 STILL."
+    },
+    "surveyor": {
+      "job": "Ein Roboter, der bewies, dass man sanft auf dem Mond landen kann, und der den Boden vor der Ankunft der Astronauten untersuchte.",
+      "story": "Ich bin allein hier gelandet. Zweieinhalb Jahre später kamen zwei Astronauten zu Besuch und nahmen meine Kamera mit zur Erde.",
+      "qs": [
+        ["Warum kamen die Astronauten?", "Um zu sehen, was Jahre auf dem Mond mit Technik machen. Teile wurden zur Untersuchung mitgenommen."],
+        ["Ist er noch da?", "Ja, nur ohne Kamera und einige Teile."],
+        ["Woraus besteht er?", "Drei Beine, ein Solarpaneel, eine Fernsehkamera und eine 12 cm große Schaufel an einem langen Arm."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 1967 STILL."
+    },
+    "alsep": {
+      "job": "Ein Satz Instrumente von Apollo 12, um Mondbeben, Magnetismus und Sonnenwind zu messen.",
+      "story": "Ich habe dem Mond zugehört. Ich spürte Mondbeben und Einschläge von Meteoriten und funkte jahrelang alles zur Erde.",
+      "qs": [
+        ["Was ist ein Mondbeben?", "Auch der Mond bebt! Instrumente wie ich spürten Beben und Meteoriteneinschläge."],
+        ["Warum wurde es abgeschaltet?", "Am 30. September 1977 schaltete die NASA alle Apollo-Stationen ab. Das Geld wurde für andere Missionen gebraucht, und die Energie ging zur Neige."],
+        ["Woraus besteht es?", "Eine Kiste mit Messgeräten an einer Plutonium-Wärmebatterie, etwa 70 Watt."]
+      ],
+      "reply": "KEIN SIGNAL. 1977 ABGESCHALTET."
+    },
+    "lrv15": {
+      "job": "Das erste Auto, das Astronauten auf dem Mond fuhren. Apollo 15 brachte es mit, damit sie viel weiter vom Modul wegkommen konnten.",
+      "story": "Ich war das erste Auto, das Menschen auf dem Mond fuhren. Zwei Astronauten fuhren mich über Hügel und Krater und ließen mich dann für immer stehen.",
+      "qs": [
+        ["Könnte ich damit fahren?", "Die Batterien sind leer, deshalb fährt es nicht mehr. Die Astronauten fuhren etwa 28 km damit."],
+        ["Warum ein Auto?", "Um weiter zu kommen als zu Fuß und Gestein und Werkzeug zu transportieren."],
+        ["Woraus besteht es?", "Es ist elektrisch! Jedes der vier Räder hatte einen eigenen Motor, die Reifen waren aus Stahldraht gewebt, und die Batterien ließen sich nicht aufladen."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 1971 GEPARKT."
+    },
+    "lrv17": {
+      "job": "Es brachte die letzte Apollo-Crew durch das Taurus-Littrow-Tal, um Gestein und Proben zu holen.",
+      "story": "Auf mir fuhr die allerletzte Apollo-Mission. Seitdem stehe ich in diesem Tal.",
+      "qs": [
+        ["Wie weit fuhr es?", "Etwa 36 km, weiter als jedes andere Apollo-Fahrzeug."],
+        ["Wer fuhr zuletzt?", "Die Crew von Apollo 17, im Dezember 1972. Seitdem ist kein Mensch mehr auf dem Mond gefahren."],
+        ["Woraus besteht es?", "Es ist elektrisch! Jedes der vier Räder hatte einen Motor, die Reifen waren aus Stahldraht, die Batterien laden nicht mehr."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 1972 GEPARKT."
+    },
+    "viking1": {
+      "job": "Das erste NASA-Raumschiff, das sicher auf dem Mars landete. Es untersuchte Boden, Luft und Wetter.",
+      "story": "Ich schickte 25 Sekunden nach der Landung mein erstes Marsfoto. Danach arbeitete ich über sechs Jahre.",
+      "qs": [
+        ["Woher kam die Energie?", "Zwei nukleare Wärmebatterien mit Plutonium. Jede lieferte etwa 30 Watt, genug für Tag und Nacht."],
+        ["Warum verstummte es?", "Die NASA verlor am 13. November 1982 den Kontakt, nach über sechs Jahren auf dem Mars."],
+        ["Woraus besteht es?", "Ein sechseckiger Aluminiumkörper auf drei Beinen, ein Roboterarm mit Schaufel und zwei Kameras, die rundum schauten."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 1982 STILL."
+    },
+    "viking2": {
+      "job": "Der Zwilling von Viking 1, weit in den Norden geschickt, um einen anderen Teil des Mars zu untersuchen.",
+      "story": "Ich landete auf einer weiten, steinigen Ebene, weit weg von meinem Zwilling. Ich arbeitete 1281 Marstage, bis die Batterien versagten.",
+      "qs": [
+        ["Was ist ein Marstag?", "Er heißt Sol. Er dauert etwa 40 Minuten länger als ein Tag auf der Erde."],
+        ["Warum hörte es auf?", "Die NASA schaltete mich am 11. April 1980 ab, als die Batterien versagten."],
+        ["Woraus besteht es?", "Wie mein Zwilling: ein Aluminiumkörper auf drei Beinen, ein Arm mit Schaufel, zwei Kameras und zwei nukleare Batterien."]
+      ],
+      "reply": "KEIN SIGNAL. BATTERIEN 1980 AUSGEFALLEN."
+    },
+    "sojourner": {
+      "job": "Der erste NASA-Rover auf dem Mars. Er testete, wie man einen Roboter auf einem anderen Planeten fährt, und untersuchte Steine neben seinem Lander.",
+      "story": "Ein zwölfjähriges Mädchen gab mir meinen Namen. Ich kam in riesigen Airbags auf dem Mars an, rollte eine Rampe hinunter und erkundete die Steine.",
+      "qs": [
+        ["Wer hat ihn benannt?", "Ein zwölfjähriges Mädchen gewann einen Wettbewerb und benannte mich nach Sojourner Truth, einer Heldin, die gegen Sklaverei und für Frauenrechte kämpfte."],
+        ["Wie landete er?", "Mein Lander traf in Airbags auf den Boden und sprang etwa 12 Meter hoch, höher als ein dreistöckiges Haus."],
+        ["Woraus besteht er?", "Sechs Räder, eine flache Oberseite mit Solarzellen und Kameras. Ich wog etwa 10,5 kg."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 1997 STILL."
+    },
+    "spirit": {
+      "job": "Ein Roboter-Geologe, geschickt in einen Krater, in dem es früher einen See gegeben haben könnte, um nach Wasser zu suchen.",
+      "story": "Ein Drittklässler gab mir meinen Namen. Ich war für 90 Tage gebaut, arbeitete aber sechs Jahre. Am Ende steckte ich im weichen Sand fest.",
+      "qs": [
+        ["Wie blieb er stecken?", "2009 brach ich durch eine dünne Kruste in eine Sandgrube. Im Mai konnte ich mich nicht mehr bewegen."],
+        ["Wie weit fuhr er?", "Etwa 7,7 km, sogar nachdem eines meiner sechs Räder ausfiel."],
+        ["Woraus besteht er?", "Sechs Räder, flügelförmige Solarzellen, wiederaufladbare Batterien und ein hoher Mast mit Kameras als Augen."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 2010 STILL."
+    },
+    "opportunity": {
+      "job": "Spirits Zwilling, auf die andere Seite des Mars geschickt, um in den Steinen Spuren von Wasser zu suchen.",
+      "story": "Meine Mission war für 90 Tage geplant. Ich arbeitete über 14 Jahre und fuhr weiter als ein Marathon.",
+      "qs": [
+        ["Warum verstummte er?", "Im Juni 2018 bedeckte ein riesiger Staubsturm den Mars. Ich lief mit Sonnenenergie, und die NASA hörte mich nie wieder."],
+        ["Wie weit fuhr er?", "Etwa 45 km. Das ist weiter als ein Marathon und war damals weiter als jeder Rover auf einer anderen Welt."],
+        ["Was fand er?", "Ich landete an einem Ort voller Hämatit, einem Mineral, das sich meist in Wasser bildet. Ein Hinweis, dass der Mars feucht war."]
+      ],
+      "reply": "KEIN SIGNAL. SEIT 2018 STILL."
+    },
+    "insight": {
+      "job": "Ein Lander, der Marsbeben hörte und die Temperatur im Inneren maß, um den Planeten von innen zu verstehen.",
+      "story": "Ich hörte, wie der Mars bebt. Staub bedeckte langsam meine Solarzellen, und im Dezember 2022 schickte ich meine letzte Nachricht.",
+      "qs": [
+        ["Was ist ein Marsbeben?", "Auch der Mars bebt! Mein Seismometer spürte, wie sich der Boden bewegt, und das hilft Forschenden, das Innere des Planeten zu verstehen."],
+        ["Was war mit dem Maulwurf?", "Meine Wärmesonde, der Maulwurf, sollte 5 Meter tief hämmern. Sie blieb nach wenigen Zentimetern stecken."],
+        ["Woraus besteht er?", "Ein Seismometer, eine Wärmesonde, Solarzellen, ein Roboterarm und ein kleiner Laserspiegel wie auf dem Mond."]
+      ],
+      "reply": "KEIN SIGNAL. LETZTE NACHRICHT: DEZEMBER 2022."
+    }
+  }
+}

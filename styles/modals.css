@@ -250,3 +250,25 @@
   color: #FFE9B0;
   letter-spacing: 0.06em;
 }
+
+/* Language picker inside the ABOUT dialog */
+.about-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font: 600 10px var(--font-mono);
+  letter-spacing: 0.08em;
+  color: #B9C4BD;
+}
+
+.about-lang-select {
+  min-height: 34px;
+  padding: 0 8px;
+  background: #2C312E;
+  color: #FFE9B0;
+  border: 1px solid #3A423E;
+  border-radius: 4px;
+  font: 600 11px var(--font-mono);
+  cursor: pointer;
+}

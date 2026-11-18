@@ -1,0 +1,163 @@
+{
+  "_disclosure": "Italian translation written by Claude (SI) for the author's review. Names, codes, clocks and console codes stay English on purpose.",
+  "lang": "it",
+  "ui": {
+    "idlePrompt": "Scegli una macchina. Premi CALL GHOST. Guarda chi risponde.",
+    "pickFirst": "PRIMA SCEGLI UNA MACCHINA, POI CHIAMA.",
+    "signalCheck": "CONTROLLO DEL SEGNALE: PREMI CALL GHOST",
+    "radioMoon": "Chiamando la Luna… 1,3 secondi per direzione.",
+    "radioMars": "Chiamando Marte… da 3 a 22 minuti per direzione.",
+    "askLabel": "DOMANDA:",
+    "answerLabel": "RISPOSTA:",
+    "readToMe": "LEGGIMELO",
+    "stop": "STOP",
+    "close": "CHIUDI",
+    "openFile": "APRI LA SCHEDA",
+    "monitorReady": "CONSOLE PRONTA.",
+    "monitorHint": "Premi un tasto illuminato o i tasti da 1 a 6 per scegliere una macchina.",
+    "aboutTitle": "INFORMAZIONI SU GHOST ROVERS",
+    "aboutTeachersLabel": "PER GLI INSEGNANTI:",
+    "aboutTeachersText": "Gratis, senza registrazione e senza raccolta dati. Abbinalo al quaderno di studio: quiz, flashcard e podcast.",
+    "aboutFacts": "Ogni dato è verificato negli archivi NASA (NSSDCA). Le foto e le mappe della Luna e di Marte sono della NASA.",
+    "aboutAuthor": "Creato da La Shara Cordero, team Clew Labs, per il NASA Space Apps Challenge 2026.",
+    "aboutTagline": "Con l'aiuto dell'IA. Approvato da una persona.",
+    "missionTitleMoon": "CONTROLLO COMPLETATO. Hai controllato ogni macchina lasciata sulla Luna dalla NASA.",
+    "missionTitleMars": "CONTROLLO DI MARTE COMPLETATO. Nessuna risponde. Non ancora.",
+    "keepExploring": "CONTINUA A ESPLORARE:",
+    "missionNote": "Realizzato con strumenti di studio IA da fonti NASA.",
+    "saveBadge": "SALVA IL DISTINTIVO",
+    "monitorTapMoon": "Oppure tocca un quadrato sulla Luna. Poi premi CALL GHOST (o C). M per Marte. ? per la guida.",
+    "monitorTapMars": "Oppure tocca un quadrato su Marte. Poi premi CALL GHOST (o C). M per la Luna. ? per la guida.",
+    "rotateTitle": "GIRA IL TELEFONO IN VERTICALE",
+    "rotateText": "La console è alta. Gira il telefono per continuare.",
+    "timelineTodayMoon": "OGGI · Ci sono ancora tutte e sei. Una risponde.",
+    "timelineTodayMars": "OGGI · Queste sei tacciono. Due rover più nuovi rispondono.",
+    "logStatusNew": "NON ANCORA CONTROLLATO",
+    "logStatusAnswers": "CONTROLLATO · RISPONDE",
+    "logStatusQuiet": "CONTROLLATO · IN SILENZIO DAL",
+    "closePhotoAria": "Chiudi il visualizzatore foto",
+    "closeAboutAria": "Chiudi la finestra Informazioni"
+  },
+  "ghosts": {
+    "mirror": {
+      "job": "L'equipaggio dell'Apollo 11 mi ha lasciato come bersaglio per i laser sparati dalla Terra, per misurare la distanza esatta dalla Luna.",
+      "story": "Sono un vassoio con 100 specchietti. Gli scienziati sulla Terra mi puntano ancora un laser addosso e io restituisco la luce.",
+      "qs": [
+        ["Come fa uno specchio a funzionare ancora?", "Non ha bisogno di energia. Sta lì e riflette la luce, come un catarifrangente della bicicletta."],
+        ["Cosa hanno imparato gli scienziati?", "La Luna si allontana dalla Terra di circa 3,8 cm all'anno. Più o meno come crescono le unghie."],
+        ["Di cosa è fatto?", "100 cubi d'angolo di vetro su un pannello di metallo largo circa 46 cm. Ognuno rimanda la luce esattamente da dove è arrivata."]
+      ],
+      "reply": "SEGNALE RICEVUTO. LA LUCE HA FATTO ANDATA E RITORNO IN 2,5 SECONDI."
+    },
+    "eagle": {
+      "job": "Il modulo di atterraggio dell'Apollo 11. Ha portato le prime due persone sulla superficie della Luna nel luglio 1969.",
+      "story": "Metà di me è rimasta qui. Quando gli astronauti sono decollati, la mia parte alta è volata verso la loro nave. Le mie gambe sono ancora in piedi nella polvere.",
+      "qs": [
+        ["Perché l'hanno lasciato?", "La parte bassa era la piattaforma di lancio. Lasciarla lì rendeva più leggero il ritorno."],
+        ["Qualcuno riesce a vederlo oggi?", "Sì! Una sonda della NASA in orbita ha fotografato il sito di atterraggio dall'alto."],
+        ["Di cosa è fatto?", "Quattro gambe con dischi rotondi, 4,2 m di larghezza. Dentro c'è ancora il motore di discesa, puntato verso il suolo."]
+      ],
+      "reply": "NESSUN SEGNALE. IN SILENZIO DAL 1969."
+    },
+    "surveyor": {
+      "job": "Un robot che ha dimostrato che si poteva atterrare dolcemente sulla Luna e ha studiato il suolo prima dell'arrivo degli astronauti.",
+      "story": "Sono atterrato qui da solo. Due anni e mezzo dopo sono venuti due astronauti, mi hanno fatto visita e hanno portato la mia telecamera sulla Terra.",
+      "qs": [
+        ["Perché sono venuti gli astronauti?", "Per vedere cosa fanno gli anni lunari a una macchina. Hanno portato via pezzi per studiarli."],
+        ["È ancora lì?", "Sì, ma senza la telecamera e alcune parti."],
+        ["Di cosa è fatto?", "Tre gambe, un pannello solare, una telecamera TV e una pala da 12 cm su un braccio lungo."]
+      ],
+      "reply": "NESSUN SEGNALE. IN SILENZIO DAL 1967."
+    },
+    "alsep": {
+      "job": "Un insieme di strumenti lasciati dall'Apollo 12 per misurare i terremoti lunari, il magnetismo e il vento solare.",
+      "story": "Ho ascoltato la Luna. Ho sentito i terremoti e gli impatti dei meteoriti e per anni ho trasmesso tutto alla Terra.",
+      "qs": [
+        ["Che cos'è un terremoto lunare?", "Anche la Luna trema! Strumenti come me hanno sentito terremoti e impatti di meteoriti."],
+        ["Perché l'hanno spento?", "Il 30 settembre 1977 la NASA ha spento tutte le stazioni Apollo. Il denaro serviva per altre missioni e l'energia stava finendo."],
+        ["Di cosa è fatto?", "Una scatola di strumenti collegata a una batteria termica al plutonio, circa 70 watt."]
+      ],
+      "reply": "NESSUN SEGNALE. SPENTO NEL 1977."
+    },
+    "lrv15": {
+      "job": "La prima auto che gli astronauti hanno guidato sulla Luna. L'Apollo 15 l'ha portata per allontanarsi molto dal modulo.",
+      "story": "Sono stata la prima auto guidata da persone sulla Luna. Due astronauti mi hanno portata su colline e crateri, poi mi hanno lasciata per sempre.",
+      "qs": [
+        ["Potrei guidarla io?", "Le batterie sono scariche, quindi non si muove più. Gli astronauti hanno percorso circa 28 km con me."],
+        ["Perché portare un'auto?", "Per andare più lontano che a piedi e trasportare rocce e attrezzi."],
+        ["Di cosa è fatta?", "È elettrica! Ognuna delle 4 ruote aveva il suo motore, i pneumatici erano di filo d'acciaio intrecciato e le batterie non si ricaricavano."]
+      ],
+      "reply": "NESSUN SEGNALE. PARCHEGGIATA DAL 1971."
+    },
+    "lrv17": {
+      "job": "Ha portato l'ultimo equipaggio Apollo nella valle Taurus-Littrow a raccogliere rocce e campioni.",
+      "story": "Mi hanno guidata nell'ultimissima missione Apollo. Da allora resto ferma in questa valle.",
+      "qs": [
+        ["Quanto ha percorso?", "Circa 36 km, più di qualsiasi altro rover Apollo."],
+        ["Chi l'ha guidata per ultimo?", "L'equipaggio dell'Apollo 17, nel dicembre 1972. Da allora nessun essere umano ha guidato sulla Luna."],
+        ["Di cosa è fatta?", "È elettrica! Ognuna delle 4 ruote aveva un motore, i pneumatici erano di filo d'acciaio, le batterie non si ricaricano."]
+      ],
+      "reply": "NESSUN SEGNALE. PARCHEGGIATA DAL 1972."
+    },
+    "viking1": {
+      "job": "La prima nave della NASA atterrata senza problemi su Marte. Ha studiato il suolo, l'aria e il tempo.",
+      "story": "Ho inviato la mia prima foto di Marte 25 secondi dopo l'atterraggio. Poi ho lavorato per più di sei anni.",
+      "qs": [
+        ["Da dove veniva l'energia?", "Due batterie termiche nucleari al plutonio. Ognuna dava circa 30 watt, abbastanza giorno e notte."],
+        ["Perché è diventato silenzioso?", "La NASA ha perso il contatto il 13 novembre 1982, dopo più di sei anni su Marte."],
+        ["Di cosa è fatto?", "Un corpo esagonale di alluminio su tre gambe, un braccio robotico con pala e due telecamere che guardavano intorno."]
+      ],
+      "reply": "NESSUN SEGNALE. IN SILENZIO DAL 1982."
+    },
+    "viking2": {
+      "job": "Il gemello del Viking 1, mandato molto a nord per studiare un'altra parte di Marte.",
+      "story": "Sono atterrato su una pianura ampia e sassosa, lontano dal mio gemello. Ho lavorato 1.281 giorni marziani prima che le batterie cedessero.",
+      "qs": [
+        ["Che cos'è un giorno marziano?", "Si chiama sol. Dura circa 40 minuti più di un giorno sulla Terra."],
+        ["Perché si è fermato?", "La NASA mi ha spento l'11 aprile 1980, quando le batterie hanno ceduto."],
+        ["Di cosa è fatto?", "Come il mio gemello: corpo di alluminio su tre gambe, braccio con pala, due telecamere e due batterie nucleari."]
+      ],
+      "reply": "NESSUN SEGNALE. BATTERIE ESAURITE NEL 1980."
+    },
+    "sojourner": {
+      "job": "Il primo rover della NASA su Marte. Ha provato come guidare un robot su un altro pianeta e ha studiato le rocce vicino al modulo.",
+      "story": "Una ragazza di 12 anni mi ha dato il nome. Sono arrivato su Marte dentro airbag giganti, sono sceso da una rampa e ho esplorato le rocce.",
+      "qs": [
+        ["Chi gli ha dato il nome?", "Una ragazza di 12 anni ha vinto un concorso e mi ha chiamato come Sojourner Truth, un'eroina che ha lottato contro la schiavitù e per i diritti delle donne."],
+        ["Come è atterrato?", "Il mio modulo ha colpito il suolo negli airbag e ha rimbalzato per circa 12 metri, più di una casa di tre piani."],
+        ["Di cosa è fatto?", "Sei ruote, una parte superiore piatta coperta di pannelli solari e telecamere. Pesavo circa 10,5 kg."]
+      ],
+      "reply": "NESSUN SEGNALE. IN SILENZIO DAL 1997."
+    },
+    "spirit": {
+      "job": "Un geologo robot mandato in un cratere che forse un tempo aveva un lago, a cercare tracce d'acqua.",
+      "story": "Un bambino di terza elementare mi ha dato il nome. Ero progettato per 90 giorni, ma ho lavorato sei anni. Alla fine sono rimasto bloccato nella sabbia morbida.",
+      "qs": [
+        ["Come si è bloccato?", "Nel 2009 ho rotto una crosta sottile e sono finito in una buca di sabbia. A maggio non riuscivo più a muovermi."],
+        ["Quanto ha percorso?", "Circa 7,7 km, anche dopo che una delle sei ruote ha smesso di funzionare."],
+        ["Di cosa è fatto?", "Sei ruote, pannelli solari a forma di ali, batterie ricaricabili e un albero alto con telecamere come occhi."]
+      ],
+      "reply": "NESSUN SEGNALE. IN SILENZIO DAL 2010."
+    },
+    "opportunity": {
+      "job": "Il gemello dello Spirit, mandato dall'altra parte di Marte a cercare nelle rocce segni d'acqua.",
+      "story": "La mia missione era prevista per 90 giorni. Ho lavorato più di 14 anni e ho percorso più di una maratona.",
+      "qs": [
+        ["Perché è diventato silenzioso?", "Nel giugno 2018 una gigantesca tempesta di polvere ha coperto Marte. Andavo a energia solare e la NASA non mi ha più sentito."],
+        ["Quanto ha percorso?", "Circa 45 km. Più di una maratona e, quando mi sono fermato, più di qualsiasi rover su un altro mondo."],
+        ["Cosa ha trovato?", "Sono atterrato in un luogo pieno di ematite, un minerale che di solito si forma nell'acqua. Un indizio che Marte è stato umido."]
+      ],
+      "reply": "NESSUN SEGNALE. IN SILENZIO DAL 2018."
+    },
+    "insight": {
+      "job": "Una sonda che ha ascoltato i terremoti di Marte e misurato la temperatura interna per capire il pianeta dall'interno.",
+      "story": "Ho ascoltato Marte tremare. La polvere ha coperto lentamente i miei pannelli solari e nel dicembre 2022 ho inviato il mio ultimo messaggio.",
+      "qs": [
+        ["Che cos'è un terremoto marziano?", "Anche Marte trema! Il mio sismometro ha sentito il suolo muoversi, e questo aiuta gli scienziati a studiare l'interno del pianeta."],
+        ["Che fine ha fatto la talpa?", "La mia sonda termica, chiamata talpa, doveva scavare 5 metri. È rimasta bloccata a pochi centimetri."],
+        ["Di cosa è fatto?", "Un sismometro, una sonda termica, pannelli solari, un braccio robotico e un piccolo specchio laser come quello sulla Luna."]
+      ],
+      "reply": "NESSUN SEGNALE. ULTIMO MESSAGGIO: DICEMBRE 2022."
+    }
+  }
+}

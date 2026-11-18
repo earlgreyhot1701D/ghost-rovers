@@ -1,0 +1,163 @@
+{
+  "_disclosure": "Spanish translation written by Claude (SI) for the author's review. Names, codes, clocks and console codes stay English on purpose.",
+  "lang": "es",
+  "ui": {
+    "idlePrompt": "Elige una máquina. Pulsa CALL GHOST. Mira quién responde.",
+    "pickFirst": "PRIMERO ELIGE UNA MÁQUINA Y LUEGO LLAMA.",
+    "signalCheck": "COMPROBACIÓN DE SEÑAL: PULSA CALL GHOST",
+    "radioMoon": "Llamando a la Luna… 1,3 segundos por sentido.",
+    "radioMars": "Llamando a Marte… de 3 a 22 minutos por sentido.",
+    "askLabel": "PREGUNTA:",
+    "answerLabel": "RESPUESTA:",
+    "readToMe": "LÉEMELO",
+    "stop": "PARAR",
+    "close": "CERRAR",
+    "openFile": "ABRIR FICHA",
+    "monitorReady": "CONSOLA LISTA.",
+    "monitorHint": "Pulsa un botón iluminado o las teclas 1 a 6 para elegir una máquina.",
+    "aboutTitle": "SOBRE GHOST ROVERS",
+    "aboutTeachersLabel": "PARA DOCENTES:",
+    "aboutTeachersText": "Gratis, sin registro y sin recoger datos. Combínalo con el cuaderno de estudio: test, tarjetas y pódcast.",
+    "aboutFacts": "Cada dato está comprobado con los registros de la NASA (NSSDCA). Las fotos y los mapas de la Luna y Marte son de la NASA.",
+    "aboutAuthor": "Hecho por La Shara Cordero, equipo Clew Labs, para el NASA Space Apps Challenge 2026.",
+    "aboutTagline": "Con ayuda de IA. Aprobado por una persona.",
+    "missionTitleMoon": "COMPROBACIÓN TERMINADA. Revisaste cada máquina que la NASA dejó en la Luna.",
+    "missionTitleMars": "COMPROBACIÓN DE MARTE TERMINADA. Ninguna responde. Todavía.",
+    "keepExploring": "SIGUE EXPLORANDO:",
+    "missionNote": "Hecho con herramientas de estudio de IA a partir de fuentes de la NASA.",
+    "saveBadge": "GUARDAR INSIGNIA",
+    "monitorTapMoon": "O toca un cuadro en la Luna. Luego pulsa CALL GHOST (o C). M para Marte. ? para la ayuda.",
+    "monitorTapMars": "O toca un cuadro en Marte. Luego pulsa CALL GHOST (o C). M para la Luna. ? para la ayuda.",
+    "rotateTitle": "GIRA EL TELÉFONO EN VERTICAL",
+    "rotateText": "La consola es alta. Gira el teléfono para seguir jugando.",
+    "timelineTodayMoon": "HOY · Las seis siguen ahí. Una responde.",
+    "timelineTodayMars": "HOY · Estas seis callan. Dos rovers nuevos responden.",
+    "logStatusNew": "AÚN SIN REVISAR",
+    "logStatusAnswers": "REVISADO · RESPONDE",
+    "logStatusQuiet": "REVISADO · EN SILENCIO DESDE",
+    "closePhotoAria": "Cerrar el visor de fotos",
+    "closeAboutAria": "Cerrar la ventana Acerca de"
+  },
+  "ghosts": {
+    "mirror": {
+      "job": "La tripulación del Apolo 11 me dejó como blanco para los láseres que se disparan desde la Tierra y así medir la distancia exacta a la Luna.",
+      "story": "Soy una bandeja de 100 espejitos. Los científicos en la Tierra todavía me apuntan con un láser y yo devuelvo la luz.",
+      "qs": [
+        ["¿Cómo funciona un espejo después de tanto tiempo?", "No necesita energía. Solo está ahí y refleja la luz, como un catadióptrico de bicicleta."],
+        ["¿Qué aprendieron los científicos?", "La Luna se aleja de la Tierra unos 3,8 cm al año. Más o menos lo que crecen las uñas."],
+        ["¿De qué está hecho?", "100 cubos de esquina de vidrio en un panel metálico de unos 46 cm. Cada uno devuelve la luz justo de donde vino."]
+      ],
+      "reply": "SEÑAL RECIBIDA. LA LUZ HIZO EL VIAJE DE IDA Y VUELTA EN 2,5 SEGUNDOS."
+    },
+    "eagle": {
+      "job": "El módulo de descenso del Apolo 11. Llevó a las dos primeras personas a la superficie de la Luna en julio de 1969.",
+      "story": "La mitad de mí se quedó aquí. Cuando los astronautas despegaron, mi parte de arriba voló a su nave. Mis patas siguen de pie en el polvo.",
+      "qs": [
+        ["¿Por qué lo dejaron?", "La parte de abajo era la plataforma de lanzamiento. Dejarla allí hacía el viaje de vuelta más ligero."],
+        ["¿Alguien lo puede ver ahora?", "¡Sí! Una nave de la NASA en órbita fotografió el lugar del alunizaje desde arriba."],
+        ["¿De qué está hecho?", "Cuatro patas con discos redondos, 4,2 m de ancho. Dentro sigue el motor de descenso apuntando al suelo."]
+      ],
+      "reply": "SIN SEÑAL. EN SILENCIO DESDE 1969."
+    },
+    "surveyor": {
+      "job": "Un robot que demostró que se podía aterrizar suavemente en la Luna y estudió el suelo antes de que llegaran los astronautas.",
+      "story": "Aterricé aquí solo. Dos años y medio después vinieron dos astronautas, me visitaron y se llevaron mi cámara a la Tierra.",
+      "qs": [
+        ["¿Por qué lo visitaron?", "Para ver qué le hacen los años a una máquina en la Luna. Se llevaron piezas para estudiarlas."],
+        ["¿Sigue allí?", "Sí, pero sin la cámara y algunas piezas que se llevaron."],
+        ["¿De qué está hecho?", "Tres patas, un panel solar, una cámara de televisión y una pala de 12 cm en un brazo largo."]
+      ],
+      "reply": "SIN SEÑAL. EN SILENCIO DESDE 1967."
+    },
+    "alsep": {
+      "job": "Un conjunto de instrumentos que dejó el Apolo 12 para medir sismos lunares, magnetismo y viento solar.",
+      "story": "Escuché a la Luna. Sentí los sismos lunares y los golpes de los meteoritos, y durante años lo transmití todo a la Tierra.",
+      "qs": [
+        ["¿Qué es un sismo lunar?", "¡La Luna también tiembla! Instrumentos como yo sintieron sismos y el impacto de meteoritos."],
+        ["¿Por qué lo apagaron?", "El 30 de septiembre de 1977 la NASA apagó todas las estaciones del Apolo. El dinero hacía falta para otras misiones y la energía se acababa."],
+        ["¿De qué está hecho?", "Una caja de instrumentos conectada a una batería térmica de plutonio, unos 70 vatios."]
+      ],
+      "reply": "SIN SEÑAL. APAGADO EN 1977."
+    },
+    "lrv15": {
+      "job": "El primer coche que los astronautas condujeron en la Luna. Lo trajo el Apolo 15 para alejarse mucho más del módulo.",
+      "story": "Fui el primer coche que la gente condujo en la Luna. Dos astronautas me llevaron por colinas y cráteres y luego me dejaron para siempre.",
+      "qs": [
+        ["¿Puedo conducirlo yo?", "Las baterías están agotadas, así que ya no se mueve. Los astronautas recorrieron unos 28 km conmigo."],
+        ["¿Para qué llevar un coche?", "Para llegar más lejos que a pie y llevar rocas y herramientas."],
+        ["¿De qué está hecho?", "¡Es eléctrico! Cada una de sus 4 ruedas tenía su propio motor, los neumáticos eran de malla de acero y las baterías no se podían recargar."]
+      ],
+      "reply": "SIN SEÑAL. APARCADO DESDE 1971."
+    },
+    "lrv17": {
+      "job": "Llevó a la última tripulación del Apolo por el valle Taurus-Littrow para recoger rocas y muestras.",
+      "story": "Me condujeron en el último viaje del Apolo. Desde entonces estoy aparcado en este valle.",
+      "qs": [
+        ["¿Cuánto recorrió?", "Unos 36 km, más que ningún otro rover del Apolo."],
+        ["¿Quién lo condujo por última vez?", "La tripulación del Apolo 17, en diciembre de 1972. Desde entonces ningún ser humano ha conducido en la Luna."],
+        ["¿De qué está hecho?", "¡Es eléctrico! Cada una de sus 4 ruedas tenía su motor, los neumáticos eran de malla de acero y las baterías no se recargan."]
+      ],
+      "reply": "SIN SEÑAL. APARCADO DESDE 1972."
+    },
+    "viking1": {
+      "job": "La primera nave de la NASA que aterrizó en Marte sin problemas. Estudió el suelo, el aire y el tiempo.",
+      "story": "Envié mi primera foto de Marte 25 segundos después de aterrizar. Luego trabajé más de seis años.",
+      "qs": [
+        ["¿De dónde sacaba la energía?", "Dos baterías térmicas nucleares con plutonio. Cada una daba unos 30 vatios, suficiente de día y de noche."],
+        ["¿Por qué se quedó en silencio?", "La NASA perdió el contacto conmigo el 13 de noviembre de 1982, tras más de seis años en Marte."],
+        ["¿De qué está hecho?", "Un cuerpo hexagonal de aluminio sobre tres patas, un brazo robótico con pala y dos cámaras que miraban alrededor."]
+      ],
+      "reply": "SIN SEÑAL. EN SILENCIO DESDE 1982."
+    },
+    "viking2": {
+      "job": "El gemelo del Viking 1, enviado muy al norte para estudiar otra parte de Marte.",
+      "story": "Aterricé en una llanura amplia y pedregosa, lejos de mi gemelo. Trabajé 1281 días marcianos antes de que fallaran las baterías.",
+      "qs": [
+        ["¿Qué es un día marciano?", "Se llama sol. Dura unos 40 minutos más que un día en la Tierra."],
+        ["¿Por qué se detuvo?", "La NASA me apagó el 11 de abril de 1980, cuando fallaron las baterías."],
+        ["¿De qué está hecho?", "Como mi gemelo: un cuerpo de aluminio sobre tres patas, un brazo con pala, dos cámaras y dos baterías nucleares."]
+      ],
+      "reply": "SIN SEÑAL. LAS BATERÍAS FALLARON EN 1980."
+    },
+    "sojourner": {
+      "job": "El primer rover de la NASA en Marte. Probó cómo conducir un robot en otro planeta y estudió las rocas junto a su módulo.",
+      "story": "Una niña de 12 años me puso nombre. Llegué a Marte dentro de airbags gigantes, bajé por una rampa y exploré las rocas.",
+      "qs": [
+        ["¿Quién le puso el nombre?", "Una niña de 12 años ganó un concurso y me llamó así por Sojourner Truth, una heroína que luchó contra la esclavitud y por los derechos de las mujeres."],
+        ["¿Cómo aterrizó?", "Mi módulo golpeó el suelo envuelto en airbags y botó unos 12 metros, más alto que una casa de tres pisos."],
+        ["¿De qué está hecho?", "Seis ruedas, una tapa plana con paneles solares y cámaras. Pesaba unos 10,5 kg."]
+      ],
+      "reply": "SIN SEÑAL. EN SILENCIO DESDE 1997."
+    },
+    "spirit": {
+      "job": "Un geólogo robot enviado a un cráter que pudo haber tenido un lago, para buscar pruebas de agua.",
+      "story": "Un niño de tercer grado me puso nombre. Estaba diseñado para 90 días, pero trabajé seis años. Al final me quedé atrapado en arena blanda.",
+      "qs": [
+        ["¿Cómo se quedó atascado?", "En 2009 rompí una costra fina y caí en un bolsillo de arena. Para mayo ya no podía moverme."],
+        ["¿Cuánto recorrió?", "Unos 7,7 km, incluso después de que una de mis seis ruedas dejara de funcionar."],
+        ["¿De qué está hecho?", "Seis ruedas, paneles solares en forma de alas, baterías recargables y un mástil alto con cámaras como ojos."]
+      ],
+      "reply": "SIN SEÑAL. EN SILENCIO DESDE 2010."
+    },
+    "opportunity": {
+      "job": "El gemelo del Spirit, enviado al otro lado de Marte para buscar en las rocas señales de agua.",
+      "story": "Mi misión estaba planeada para 90 días. Trabajé más de 14 años y recorrí más que una maratón.",
+      "qs": [
+        ["¿Por qué se quedó en silencio?", "En junio de 2018 una enorme tormenta de polvo cubrió Marte. Yo funcionaba con energía solar y la NASA no volvió a oírme."],
+        ["¿Cuánto recorrió?", "Unos 45 km. Es más que una maratón y, cuando me detuve, más que cualquier rover en otro mundo."],
+        ["¿Qué encontró?", "Aterricé en un lugar lleno de hematita, un mineral que suele formarse en agua. Fue una pista de que Marte fue húmedo."]
+      ],
+      "reply": "SIN SEÑAL. EN SILENCIO DESDE 2018."
+    },
+    "insight": {
+      "job": "Una nave que escuchó los sismos de Marte y midió la temperatura de su interior para entender cómo es el planeta por dentro.",
+      "story": "Escuché cómo temblaba Marte. El polvo fue cubriendo mis paneles solares y en diciembre de 2022 envié mi último mensaje.",
+      "qs": [
+        ["¿Qué es un sismo marciano?", "¡Marte también tiembla! Mi sismómetro sintió moverse el suelo y eso ayuda a los científicos a estudiar el interior del planeta."],
+        ["¿Qué pasó con el topo?", "Mi sonda térmica, llamada topo, debía clavarse 5 metros. Se quedó atascada a pocos centímetros."],
+        ["¿De qué está hecho?", "Un sismómetro, una sonda térmica, paneles solares, un brazo robótico y un pequeño espejo láser como el de la Luna."]
+      ],
+      "reply": "SIN SEÑAL. ÚLTIMO MENSAJE: DICIEMBRE DE 2022."
+    }
+  }
+}

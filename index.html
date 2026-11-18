@@ -45,8 +45,8 @@
 
   <!-- Shown only on phones held sideways: the console is a portrait layout. -->
   <div id="rotate-hint" class="rotate-hint">
-    <p class="rotate-hint-title">TURN YOUR PHONE UPRIGHT</p>
-    <p class="rotate-hint-text">Mission Control is built tall. Rotate the phone to keep playing.</p>
+    <p class="rotate-hint-title" data-i18n="rotateTitle">TURN YOUR PHONE UPRIGHT</p>
+    <p class="rotate-hint-text" data-i18n="rotateText">Mission Control is built tall. Rotate the phone to keep playing.</p>
   </div>
 
   <main id="room" class="room">
@@ -187,11 +187,11 @@
             </div>
             <canvas id="badge-canvas" class="badge-canvas" width="440" height="200" role="img" aria-label="Junior Flight Controller Ghost Rovers badge"></canvas>
             <div class="mission-complete-actions">
-              <button id="save-badge-btn" type="button" class="save-badge-btn">SAVE BADGE</button>
+              <button id="save-badge-btn" type="button" class="save-badge-btn" data-i18n="saveBadge">SAVE BADGE</button>
             </div>
             <div class="mission-complete-study">
               <div class="mission-complete-study-row">
-                <span class="mission-complete-study-label">KEEP EXPLORING:</span>
+                <span class="mission-complete-study-label" data-i18n="keepExploring">KEEP EXPLORING:</span>
                 <a id="study-quiz-link" href="https://notebook.google.com/notebook/c43a9882-26f7-4223-a46c-3f5c332dd378/artifact/16590fae-9e4f-4a0a-ba03-4c358ff32eb4" target="_blank" rel="noopener noreferrer" class="study-tool-btn">
                   <span>QUIZ</span><span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span>
                 </a>
@@ -202,7 +202,7 @@
                   <span>MIND MAP</span><span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span>
                 </a>
               </div>
-              <p class="mission-complete-study-note">Made with AI study tools from NASA sources.</p>
+              <p class="mission-complete-study-note" data-i18n="missionNote">Made with AI study tools from NASA sources.</p>
             </div>
             <div id="still-answering" class="still-answering" hidden></div>
           </div>
@@ -228,7 +228,7 @@
       <div class="compact-summary-cell compact-summary-cell--landed">
         <span id="compact-landed-text">LANDED 1967 · 1969 · 1971 · 1972</span>
       </div>
-      <button id="compact-open-file-btn" type="button" class="compact-open-file-btn" hidden>OPEN FILE</button>
+      <button id="compact-open-file-btn" type="button" class="compact-open-file-btn" data-i18n="openFile" hidden>OPEN FILE</button>
     </div>
 
     <!-- Curved Metallic Console Lip & Desk -->
@@ -249,10 +249,10 @@
       <div class="console-monitor-bezel">
         <article aria-label="Console monitor" class="console-monitor">
           <div id="monitor-idle" class="monitor-idle">
-            <p class="monitor-ready-title">CONSOLE READY.</p>
-            <p class="monitor-ready-sub">PRESS A LIT BUTTON OR KEYS 1 TO 6 TO PICK A GHOST.<span class="blink">_</span></p>
+            <p class="monitor-ready-title" data-i18n="monitorReady">CONSOLE READY.</p>
+            <p class="monitor-ready-sub"><span data-i18n="monitorHint">PRESS A LIT BUTTON OR KEYS 1 TO 6 TO PICK A GHOST.</span><span class="blink">_</span></p>
             <p id="monitor-ready-hint" class="monitor-ready-hint">Or tap a square on the Moon. Then press CALL GHOST (or C). Press M for Mars. Press ? for About.</p>
-            <p id="monitor-warn" aria-live="polite" class="monitor-warn" hidden>&gt; PICK A GHOST FIRST, THEN CALL.</p>
+            <p id="monitor-warn" aria-live="polite" class="monitor-warn" data-i18n="pickFirst" hidden>&gt; PICK A GHOST FIRST, THEN CALL.</p>
           </div>
 
           <div id="monitor-file" class="monitor-file" hidden>
@@ -262,13 +262,13 @@
               <p id="file-body" class="file-body"></p>
               <div id="file-answer-box" class="file-answer-box" hidden>
                 <div class="file-answer-content">
-                  <span class="file-answer-label">ANSWER: </span>
+                  <span class="file-answer-label" data-i18n="answerLabel">ANSWER: </span>
                   <span id="file-answer-text" class="file-answer-text"></span>
                 </div>
                 <button id="file-answer-clear" type="button" class="file-answer-clear" aria-label="Clear answer">×</button>
               </div>
               <div class="file-actions">
-                <span class="ask-label">ASK:</span>
+                <span class="ask-label" data-i18n="askLabel">ASK:</span>
                 <button id="q-btn-0" type="button" class="q-btn" aria-expanded="false"></button>
                 <button id="q-btn-1" type="button" class="q-btn" aria-expanded="false"></button>
                 <button id="q-btn-2" type="button" class="q-btn" aria-expanded="false"></button>
@@ -327,7 +327,7 @@
     <!-- Phone Bottom Sheet for Ghost File -->
     <section id="phone-sheet" aria-label="Ghost file details" class="phone-sheet" hidden>
       <div aria-hidden="true" class="phone-sheet-handle"></div>
-      <button id="phone-sheet-close" type="button" class="phone-sheet-close" aria-label="Close ghost file">CLOSE</button>
+      <button id="phone-sheet-close" type="button" class="phone-sheet-close" aria-label="Close ghost file" data-i18n="close">CLOSE</button>
 
       <div class="phone-sheet-top">
         <button id="phone-sheet-photo-btn" type="button" class="phone-sheet-photo-btn" aria-label="View larger photo" hidden>
@@ -347,13 +347,13 @@
           <p id="phone-file-body" class="file-body"></p>
           <div id="phone-file-answer-box" class="file-answer-box" hidden>
             <div class="file-answer-content">
-              <span class="file-answer-label">ANSWER: </span>
+              <span class="file-answer-label" data-i18n="answerLabel">ANSWER: </span>
               <span id="phone-file-answer-text" class="file-answer-text"></span>
             </div>
             <button id="phone-file-answer-clear" type="button" class="file-answer-clear" aria-label="Clear answer">×</button>
           </div>
           <div class="file-actions">
-            <span class="ask-label">ASK:</span>
+            <span class="ask-label" data-i18n="askLabel">ASK:</span>
             <button id="phone-q-btn-0" type="button" class="q-btn" aria-expanded="false"></button>
             <button id="phone-q-btn-1" type="button" class="q-btn" aria-expanded="false"></button>
             <button id="phone-q-btn-2" type="button" class="q-btn" aria-expanded="false"></button>
@@ -395,7 +395,7 @@
       <div class="photo-modal-frame">
         <div class="photo-modal-topbar">
           <span id="photo-modal-caption" class="photo-modal-caption"></span>
-          <button id="photo-modal-close" type="button" class="photo-modal-close" aria-label="Close photo viewer">CLOSE</button>
+          <button id="photo-modal-close" type="button" class="photo-modal-close" aria-label="Close photo viewer" data-i18n="close" data-i18n-aria="closePhotoAria">CLOSE</button>
         </div>
         <div class="photo-modal-stage">
           <img id="photo-modal-img" class="photo-modal-img" src="" alt="">
@@ -408,19 +408,19 @@
       <div id="about-modal-backdrop" class="about-modal-backdrop"></div>
       <div class="about-modal-card">
         <div class="about-modal-topbar">
-          <h2 id="about-modal-title" class="about-modal-title">ABOUT GHOST ROVERS</h2>
-          <button id="about-modal-close" type="button" class="about-modal-close" aria-label="Close About dialog">CLOSE</button>
+          <h2 id="about-modal-title" class="about-modal-title" data-i18n="aboutTitle">ABOUT GHOST ROVERS</h2>
+          <button id="about-modal-close" type="button" class="about-modal-close" aria-label="Close About dialog" data-i18n="close" data-i18n-aria="closeAboutAria">CLOSE</button>
         </div>
         <div class="about-modal-body">
           <div class="about-teachers-box">
-            <p class="about-teachers-p"><strong class="about-teachers-label">FOR TEACHERS:</strong> Free, no login, no data collected. Pair it with the study notebook’s quiz, flashcards, and podcast.</p>
+            <p class="about-teachers-p"><strong class="about-teachers-label" data-i18n="aboutTeachersLabel">FOR TEACHERS:</strong> <span data-i18n="aboutTeachersText">Free, no login, no data collected. Pair it with the study notebook’s quiz, flashcards, and podcast.</span></p>
             <a href="https://notebook.google.com/notebook/c43a9882-26f7-4223-a46c-3f5c332dd378" target="_blank" rel="noopener noreferrer" class="about-link-btn">
               <span>STUDY NOTEBOOK</span><span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span>
             </a>
           </div>
-          <p class="about-modal-p">Every fact is checked against NASA’s records (NSSDCA). Photos and the Moon and Mars maps are NASA’s.</p>
-          <p class="about-modal-p">Made by La Shara Cordero, team Clew Labs, for the NASA Space Apps Challenge 2026.</p>
-          <p class="about-modal-tagline">AI assisted. Human approved.</p>
+          <p class="about-modal-p" data-i18n="aboutFacts">Every fact is checked against NASA’s records (NSSDCA). Photos and the Moon and Mars maps are NASA’s.</p>
+          <p class="about-modal-p" data-i18n="aboutAuthor">Made by La Shara Cordero, team Clew Labs, for the NASA Space Apps Challenge 2026.</p>
+          <p class="about-modal-tagline" data-i18n="aboutTagline">AI assisted. Human approved.</p>
           <div class="about-modal-links">
             <a href="https://github.com/earlgreyhot1701D/ghost-rovers/blob/main/docs/FACT_CHECK.md" target="_blank" rel="noopener noreferrer" class="about-link-btn">
               <span>FACT CHECK</span><span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span>
@@ -431,6 +431,18 @@
             <a href="https://github.com/earlgreyhot1701D/ghost-rovers" target="_blank" rel="noopener noreferrer" class="about-link-btn">
               <span>CODE</span><span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span>
             </a>
+            <div class="about-lang">
+              <label class="about-lang-label" for="lang-select">LANGUAGE / ЯЗЫК</label>
+              <select id="lang-select" class="about-lang-select">
+                <option value="en">ENGLISH</option>
+                <option value="ru">РУССКИЙ</option>
+                <option value="es">ESPAÑOL</option>
+                <option value="fr">FRANÇAIS</option>
+                <option value="de">DEUTSCH</option>
+                <option value="pt">PORTUGUÊS (BR)</option>
+                <option value="it">ITALIANO</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>

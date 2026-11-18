@@ -1,6 +1,8 @@
 // js/card.js: Render side screens, hardware plot, photo takeover, console monitor, phone sheet, photo viewer, and mission complete badge using textContent only
 // SI-assisted code (Claude, Antigravity), reviewed by La Shara Cordero. See AI_DISCLOSURE.md.
 
+import { t } from './i18n.js';
+
 function p2(n) {
   return String(n).padStart(2, '0');
 }
@@ -349,8 +351,8 @@ export function initPanels(initialData, callbacks) {
     todayLi.textContent =
       dataObj.today ||
       (isMars
-        ? 'TODAY · All 6 are still there. None answer yet.'
-        : 'TODAY · All 6 are still there. 1 still answers.');
+        ? t('timelineTodayMars', 'TODAY · All 6 are still there. None answer yet.')
+        : t('timelineTodayMoon', 'TODAY · All 6 are still there. 1 still answers.'));
     timelineListEl.appendChild(todayLi);
 
     // 3. Rebuild Right Side Screen Ghost Log (GHOST LOG)
@@ -486,13 +488,13 @@ export function initPanels(initialData, callbacks) {
     }
     if (monitorReadyHintEl) {
       monitorReadyHintEl.textContent = isMars
-        ? 'Or tap a square on Mars. Then press CALL GHOST (or C). Press M for Moon. Press ? for About.'
-        : 'Or tap a square on the Moon. Then press CALL GHOST (or C). Press M for Mars. Press ? for About.';
+        ? t('monitorTapMars', 'Or tap a square on Mars. Then press CALL GHOST (or C). Press M for Moon. Press ? for About.')
+        : t('monitorTapMoon', 'Or tap a square on the Moon. Then press CALL GHOST (or C). Press M for Mars. Press ? for About.');
     }
     if (missionCompleteTitleEl) {
       missionCompleteTitleEl.textContent = isMars
-        ? 'MARS CHECK COMPLETE. None of them answer. Yet.'
-        : 'GHOST CHECK COMPLETE. You checked every machine NASA left on the Moon.';
+        ? t('missionTitleMars', 'MARS CHECK COMPLETE. None of them answer. Yet.')
+        : t('missionTitleMoon', 'GHOST CHECK COMPLETE. You checked every machine NASA left on the Moon.');
     }
 
     const links = dataObj.studyLinks || {};
@@ -801,9 +803,9 @@ export function initPanels(initialData, callbacks) {
       item.nameSpan.textContent = (done ? '✓ ' : '') + x.name;
       item.statusSpan.textContent = done
         ? x.answers
-          ? 'CHECKED · ANSWERS'
-          : 'CHECKED · QUIET SINCE ' + x.quiet
-        : 'NOT CHECKED YET';
+          ? t('logStatusAnswers', 'CHECKED · ANSWERS')
+          : t('logStatusQuiet', 'CHECKED · QUIET SINCE') + ' ' + x.quiet
+        : t('logStatusNew', 'NOT CHECKED YET');
       item.statusSpan.style.color = done ? (x.answers ? '#9BEFB0' : '#F2A08F') : '#A9B4AD';
     });
 
@@ -844,10 +846,10 @@ export function initPanels(initialData, callbacks) {
       plotSelectedWrap.hidden = true;
       plotSignalText.className = '';
       if (state.call === 'nosel') {
-        plotSignalText.textContent = 'PICK A GHOST FIRST, THEN CALL.';
+        plotSignalText.textContent = t('pickFirst', 'PICK A GHOST FIRST, THEN CALL.');
         plotSignalText.style.color = '#F2A08F';
       } else {
-        plotSignalText.textContent = 'Pick a machine. Press CALL GHOST. See who answers.';
+        plotSignalText.textContent = t('idlePrompt', 'Pick a machine. Press CALL GHOST. See who answers.');
         plotSignalText.style.color = '#B7CDD1';
       }
     } else {
@@ -888,8 +890,8 @@ export function initPanels(initialData, callbacks) {
           plotSignalText.className = '';
         } else {
           plotSignalText.textContent = isMars
-            ? 'Radioing Mars… 3 to 22 minutes each way.'
-            : 'Radioing the Moon… 1.3 seconds each way.';
+            ? t('radioMars', 'Radioing Mars… 3 to 22 minutes each way.')
+            : t('radioMoon', 'Radioing the Moon… 1.3 seconds each way.');
           plotSignalText.style.color = '#FFFFFF';
           plotSignalText.className = 'blink';
         }
@@ -898,7 +900,7 @@ export function initPanels(initialData, callbacks) {
         plotSignalText.style.color = g.answers ? '#9BEFB0' : '#F2A08F';
         plotSignalText.className = '';
       } else {
-        plotSignalText.textContent = 'SIGNAL CHECK: PRESS CALL GHOST';
+        plotSignalText.textContent = t('signalCheck', 'SIGNAL CHECK: PRESS CALL GHOST');
         plotSignalText.style.color = '#B7CDD1';
         plotSignalText.className = '';
       }
@@ -949,7 +951,7 @@ export function initPanels(initialData, callbacks) {
       readBtn.hidden = !state.speechSupported;
       phoneReadBtn.hidden = !state.speechSupported;
       if (state.speechSupported) {
-        const readLabel = state.speaking ? 'STOP' : 'READ TO ME';
+        const readLabel = state.speaking ? t('stop', 'STOP') : t('readToMe', 'READ TO ME');
         readBtn.textContent = readLabel;
         readBtn.setAttribute('aria-pressed', state.speaking ? 'true' : 'false');
         phoneReadBtn.textContent = readLabel;
